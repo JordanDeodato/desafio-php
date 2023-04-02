@@ -14,6 +14,7 @@ O programa contém as seguintes tecnologias:
 * MySQL
 * Laravel.mix
 * phpMyAdmin
+* Post Man ou outro programa que manipule API
 
 Obs: A instalação do Xampp ou do Laragon é utilizado para obter tanto o PHP(linguagem de programação base para o Laravel) quanto o Apache(servidor)
 
@@ -32,3 +33,22 @@ Passo a passo para executar o programa:
 6 - Insira os dados automaticamente com o comando *php artisan db:seed*
 
 7 - Por último utilize o comando *php artisan serve* para rodar a aplicação.
+
+8 - Para manipular as APIs você precisa do programa *PostMan* ou outro manipulador de APIs para poder fazer alterações/visualizações
+
+## Passo a passo para realizar alterações/visualizações da API:
+
+* No arquivo *api.php* contém as rotas necessarias
+* /products - Visualiza todos os produtos cadastrados no Banco de Dados em formato *json*
+* /products/{id} - Visualiza um produto através do *id*
+* /products - Cadastra um novo produto
+* /products/{id} - Edita um produto já cadastrado
+* /products/{id} - Exclui um produto cadastrado
+
+Para poder manipular os dados da API você precisa:
+* Abrir o Programa PostMan
+* Copiar o link da ação que deseja realizar cole no local indicado no programa
+* Escolha o método da ação que deseja fazer - GET: Ler os dados, POST: Criar um novo dado, PUT: Editar um dado, DELETE: Apagar um dado
+* Visualize os dados na tela abaixo.
+
+Obs: Lembrando que os dados da API são interligados com o banco de dados, portanto, qualquer alteração realizada lá irá ser alterada no projeto principal.
