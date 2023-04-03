@@ -39,11 +39,11 @@ Passo a passo para executar o programa:
 ## Passo a passo para realizar alterações/visualizações da API:
 
 * No arquivo *api.php* contém as rotas necessarias
-* GET    -- /products - Visualiza todos os produtos cadastrados no Banco de Dados em formato *json*
-* GET    -- /products/{id} - Visualiza um produto através do *id*
-* POST   -- /products - Cadastra um novo produto
-* PUT    -- /products/{id} - Edita um produto já cadastrado
-* DELETE -- /products/{id} - Exclui um produto cadastrado
+* GET    -- http://127.0.0.1:8000/products - Visualiza todos os produtos cadastrados no Banco de Dados em formato *json*
+* GET    -- http://127.0.0.1:8000/products/{id} - Visualiza um produto através do *id*
+* POST   -- http://127.0.0.1:8000/products - Cadastra um novo produto
+* PUT    -- http://127.0.0.1:8000/products/{id} - Edita um produto já cadastrado
+* DELETE -- http://127.0.0.1:8000/products/{id} - Exclui um produto cadastrado
 
 Para poder manipular os dados da API você precisa:
 * Abrir o Programa PostMan
